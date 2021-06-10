@@ -8,6 +8,8 @@ import 'package:quick_actions/quick_actions.dart';
 import 'package:demo2_deer/demo/demo_page.dart';
 
 void main() {
+  /// 确保初始化完成 - WidgetsFlutterBinding
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 

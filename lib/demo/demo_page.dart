@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:demo2_deer/widgets/my_app_bar.dart';
+import 'package:demo2_deer/res/resources.dart';
 
 class DemoPage extends StatefulWidget {
   const DemoPage({Key? key}) : super(key: key);
@@ -25,7 +26,13 @@ class _DemoPageState extends State<DemoPage> {
     // TODO: implement build
     // throw UnimplementedError();
     return Scaffold(
-      appBar: const MyAppBar(),
+      appBar: const MyAppBar(centerTitle: 'Demo'),
+      body: Column(
+        children: <Widget>[
+          Gaps.vGap5,
+          // ClickItem()
+        ],
+      ),
     );
   }
 }
